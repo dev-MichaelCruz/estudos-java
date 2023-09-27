@@ -8,6 +8,7 @@ public class Usuario {
         System.out.println("Volume atual? " + smartTv.volume);
 
         smartTv.escolherCanal(13);
+        smartTv.aumentarCanal();
 
         System.out.println("Canal atual? " + smartTv.canal);
     }
