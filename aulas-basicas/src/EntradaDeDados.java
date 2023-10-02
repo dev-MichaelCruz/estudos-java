@@ -15,6 +15,8 @@ public class EntradaDeDados {
 
         System.out.println("A média do aluno é: " + media);
 
+        leitor.close();
+
     }
 
 }

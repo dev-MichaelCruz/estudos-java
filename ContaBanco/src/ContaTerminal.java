@@ -27,5 +27,6 @@ public class ContaTerminal {
                 + " ,obrigado por criar uma conta em nosso banco, sua agência é " + numeroAgencia + "-" + digitoAgencia
                 + ", conta " + numeroConta + " e seu saldo de R$ " + saldo + " já está disponível para saque");
 
+        leitor.close();
     }
 }
