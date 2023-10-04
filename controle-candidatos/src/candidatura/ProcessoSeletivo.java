@@ -4,8 +4,21 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
   public static void main(String[] args) {
-    selecionarCandidatos();
+    imprimirSelecionados();
+  }
 
+  // impirmir lista de selecionados
+  static void imprimirSelecionados() {
+    String[] candidatos = { "Felipe", "Marcia", "Julia", "Paulo", "Augusto" };
+
+    for (int indice = 0; indice < candidatos.length; indice++) {
+      System.out.println("o candidato " + (indice + 1) + " é " + candidatos[indice]);
+    }
+
+    // OU
+    for (String candidato : candidatos) {
+      System.out.println(" O candiato selecionado foi " + candidato);
+    }
   }
 
   // Valor pretendidao randomico
@@ -20,7 +33,7 @@ public class ProcessoSeletivo {
     int candidatosSelecionados = 0;
     int candidatoAtual = 0;
 
-    while (candidatosSelecionados < 5) {
+    while (candidatosSelecionados < 5 && candidatoAtual < candidatos.length) {
       double salarioBase = 2000;
 
       String candidato = candidatos[candidatoAtual];
@@ -31,10 +44,11 @@ public class ProcessoSeletivo {
       if (salarioPretendido <= salarioBase) {
         System.out.println("O candidato " + candidato + " foi selecionado para a vaga");
         candidatosSelecionados++;
+
       }
       candidatoAtual++;
-
     }
+
   }
 
   static void analisarCandidato(double salarioPretendido) {
