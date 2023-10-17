@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Controle-Fluxo/Controle-Fluxo.iml" filepath="$PROJECT_DIR$/Controle-Fluxo/Controle-Fluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aulas-basicas/aulas-basicas.iml" filepath="$PROJECT_DIR$/aulas-basicas/aulas-basicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controle-candidatos/controle-candidatos.iml" filepath="$PROJECT_DIR$/controle-candidatos/controle-candidatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estudos-java.iml" filepath="$PROJECT_DIR$/estudos-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistema-smartv/sistema-smartv.iml" filepath="$PROJECT_DIR$/sistema-smartv/sistema-smartv.iml" />
+    </modules>
+  </component>
+</project>
