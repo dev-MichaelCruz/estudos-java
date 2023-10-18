@@ -2,14 +2,14 @@ package Set.Produtos;
 
 public class Produto implements Comparable<Produto> {
 
-  private String nome;
   private long codigo;
+  private String nome;
   private double preco;
   private int quantidade;
 
-  public Produto(String nome, long codigo, double preco, int quantidade) {
-    this.nome = nome;
+  public Produto(long codigo, String nome, double preco, int quantidade) {
     this.codigo = codigo;
+    this.nome = nome;
     this.preco = preco;
     this.quantidade = quantidade;
   }
@@ -33,28 +33,6 @@ public class Produto implements Comparable<Produto> {
 
   public int getQuantidade() {
     return quantidade;
-  }
-
-  @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = 1;
-    result = prime * result + (int) (codigo ^ (codigo >>> 32));
-    return result;
-  }
-
-  @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    Produto other = (Produto) obj;
-    if (codigo != other.codigo)
-      return false;
-    return true;
   }
 
   @Override

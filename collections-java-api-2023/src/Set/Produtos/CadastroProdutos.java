@@ -13,7 +13,7 @@ public class CadastroProdutos {
   }
 
   public void adicionarProduto(String nome, long codigo, double preco, int quantidade) {
-    produtosSet.add(new Produto(nome, codigo, preco, quantidade));
+    produtosSet.add(new Produto(codigo, nome, preco, quantidade));
   }
 
   public Set<Produto> exibirProdutosPorNome() {
